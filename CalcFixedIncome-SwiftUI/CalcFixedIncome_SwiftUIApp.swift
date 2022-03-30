@@ -15,7 +15,7 @@ struct CalcFixedIncome_SwiftUIApp: App {
                 InputValuesView()
                     .environmentObject(InputValuesViewModel())
             }
-//            .accentColor(.black)
+            .accentColor(.black)
         }
     }
 }

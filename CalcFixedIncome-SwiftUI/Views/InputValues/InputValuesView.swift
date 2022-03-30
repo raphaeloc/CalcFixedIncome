@@ -23,9 +23,11 @@ struct InputValuesView: View {
                 VStack(spacing: 8) {
                     DatePicker("initial date", selection: $viewModel.initialDate, displayedComponents: .date)
                         .datePickerStyle(.compact)
+                        .accentColor(.black)
                     
                     DatePicker("final date", selection: $viewModel.finalDate, displayedComponents: .date)
                         .datePickerStyle(.compact)
+                        .accentColor(.black)
                 }
             }
             
