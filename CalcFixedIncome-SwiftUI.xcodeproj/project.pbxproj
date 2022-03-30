@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0A00D727F48D4300F2F32C /* UIApplication+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A00D627F48D4300F2F32C /* UIApplication+Utils.swift */; };
 		CF43B89C27F40F01002E8743 /* PercentageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF43B89B27F40F01002E8743 /* PercentageTextField.swift */; };
 		CFAD5B0127F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B0027F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift */; };
 		CFAD5B0327F3C3B5007AA29F /* InputValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B0227F3C3B5007AA29F /* InputValuesView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF0A00D627F48D4300F2F32C /* UIApplication+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Utils.swift"; sourceTree = "<group>"; };
 		CF43B89B27F40F01002E8743 /* PercentageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageTextField.swift; sourceTree = "<group>"; };
 		CFAD5AFD27F3C3B5007AA29F /* CalcFixedIncome-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalcFixedIncome-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD5B0027F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcFixedIncome_SwiftUIApp.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				CFAD5B1327F3C830007AA29F /* CurrencyExtensions.swift */,
 				CFAD5B1827F3C89E007AA29F /* Date+Utils.swift */,
+				CF0A00D627F48D4300F2F32C /* UIApplication+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				CFAD5B1C27F3C940007AA29F /* MonthlyIncomesView.swift in Sources */,
 				CFAD5B2527F3E3DD007AA29F /* CurrencyTextField.swift in Sources */,
 				CFAD5B1727F3C85F007AA29F /* Values.swift in Sources */,
+				CF0A00D727F48D4300F2F32C /* UIApplication+Utils.swift in Sources */,
 				CFAD5B1E27F3C95D007AA29F /* MonthlyIncomesViewModel.swift in Sources */,
 				CFAD5B1427F3C830007AA29F /* CurrencyExtensions.swift in Sources */,
 				CFAD5B2127F3CDF9007AA29F /* DirectResultView.swift in Sources */,

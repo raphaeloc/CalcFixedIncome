@@ -21,11 +21,12 @@ struct InputValuesView: View {
                                      anualRate: $viewModel.anualRate)
                 
                 VStack(spacing: 8) {
+                    
                     DatePicker("initial date", selection: $viewModel.initialDate, displayedComponents: .date)
                         .datePickerStyle(.compact)
                         .accentColor(.black)
                     
-                    DatePicker("final date", selection: $viewModel.finalDate, displayedComponents: .date)
+                    DatePicker("final date", selection: $viewModel.finalDate, in: viewModel.initialDate..., displayedComponents: .date)
                         .datePickerStyle(.compact)
                         .accentColor(.black)
                 }
@@ -49,6 +50,9 @@ struct InputValuesView: View {
             }
             .hidden()
             .frame(width: 0, height: 0, alignment: .bottom)
+        }
+        .onTapGesture {
+            UIApplication.shared.endEditing()
         }
         .padding(.top, 16)
         .padding(.horizontal, 16)
