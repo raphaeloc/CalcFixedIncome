@@ -14,16 +14,19 @@ struct InputValuesView: View {
     var body: some View {
         
         VStack(spacing: 16) {
-            InputValueTextFields(initialValue: $viewModel.initialValue,
-                                 monthlyContribuition: $viewModel.monthlyContribuition,
-                                 anualRate: $viewModel.anualRate)
-            
-            VStack(spacing: 8) {
-                DatePicker("initial date", selection: $viewModel.initialDate, displayedComponents: .date)
-                    .datePickerStyle(.compact)
+            ScrollView {
                 
-                DatePicker("final date", selection: $viewModel.finalDate, displayedComponents: .date)
-                    .datePickerStyle(.compact)
+                InputValueTextFields(initialValue: $viewModel.initialValue,
+                                     monthlyContribuition: $viewModel.monthlyContribuition,
+                                     anualRate: $viewModel.anualRate)
+                
+                VStack(spacing: 8) {
+                    DatePicker("initial date", selection: $viewModel.initialDate, displayedComponents: .date)
+                        .datePickerStyle(.compact)
+                    
+                    DatePicker("final date", selection: $viewModel.finalDate, displayedComponents: .date)
+                        .datePickerStyle(.compact)
+                }
             }
             
             Spacer()
