@@ -60,13 +60,9 @@ struct InputValueTextFields: View {
         
         VStack(spacing: 8) {
             
-            TextField("initial value", text: $initialValue)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+            CurrencyTextField(text: $initialValue, placeholder: "initial value", keyboardType: .numberPad)
             
-            TextField("monthly contribuition", text: $monthlyContribuition)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+            CurrencyTextField(text: $monthlyContribuition, placeholder: "monthly contribuition", keyboardType: .numberPad)
             
             TextField("anual rate", text: $anualRate)
                 .textFieldStyle(.roundedBorder)

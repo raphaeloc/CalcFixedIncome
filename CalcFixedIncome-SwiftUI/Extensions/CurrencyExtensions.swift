@@ -28,6 +28,7 @@ extension String {
     
     var currencyValue: String {
         let decimal = (self.digits.decimal / Decimal(100))
+        if decimal == 0 { return "" }
         return formatter.string(from: NSNumber(value: decimal.number.doubleValue)) ?? ""
     }
     

@@ -19,6 +19,7 @@
 		CFAD5B1E27F3C95D007AA29F /* MonthlyIncomesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B1D27F3C95D007AA29F /* MonthlyIncomesViewModel.swift */; };
 		CFAD5B2127F3CDF9007AA29F /* DirectResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B2027F3CDF9007AA29F /* DirectResultView.swift */; };
 		CFAD5B2327F3CE16007AA29F /* DirectResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B2227F3CE16007AA29F /* DirectResultViewModel.swift */; };
+		CFAD5B2527F3E3DD007AA29F /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B2427F3E3DD007AA29F /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CFAD5B1D27F3C95D007AA29F /* MonthlyIncomesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyIncomesViewModel.swift; sourceTree = "<group>"; };
 		CFAD5B2027F3CDF9007AA29F /* DirectResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectResultView.swift; sourceTree = "<group>"; };
 		CFAD5B2227F3CE16007AA29F /* DirectResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectResultViewModel.swift; sourceTree = "<group>"; };
+		CFAD5B2427F3E3DD007AA29F /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				CFAD5B1F27F3CDD2007AA29F /* DirectResultView */,
 				CFAD5B1A27F3C931007AA29F /* MonthlyIncomes */,
 				CFAD5B0F27F3C782007AA29F /* InputValues */,
+				CFAD5B2427F3E3DD007AA29F /* CurrencyTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				CFAD5B1927F3C89E007AA29F /* Date+Utils.swift in Sources */,
 				CFAD5B0127F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift in Sources */,
 				CFAD5B1C27F3C940007AA29F /* MonthlyIncomesView.swift in Sources */,
+				CFAD5B2527F3E3DD007AA29F /* CurrencyTextField.swift in Sources */,
 				CFAD5B1727F3C85F007AA29F /* Values.swift in Sources */,
 				CFAD5B1E27F3C95D007AA29F /* MonthlyIncomesViewModel.swift in Sources */,
 				CFAD5B1427F3C830007AA29F /* CurrencyExtensions.swift in Sources */,

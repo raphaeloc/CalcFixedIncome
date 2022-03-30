@@ -26,8 +26,8 @@ class InputValuesViewModel: ObservableObject {
     var monthlyIncomes = Items()
     
     func checkValues() {
-        guard let initialValue = Double(initialValue),
-              let monthlyContribuition = Double(monthlyContribuition),
+        guard let initialValue = initialValue.withoutCurrencyValue,
+              let monthlyContribuition = monthlyContribuition.withoutCurrencyValue,
               let anualRate = Double(anualRate),
               initialValue > 0,
               monthlyContribuition > 0,
