@@ -1,21 +1,19 @@
 //
-//  CurrencyTextField.swift
+//  PercentageTextField.swift
 //  CalcFixedIncome-SwiftUI
 //
-//  Created by Raphael de Oliveira Chagas on 29/03/22.
+//  Created by Raphael de Oliveira Chagas on 30/03/22.
 //
 
 import Foundation
 import SwiftUI
-import Combine
 
-struct CurrencyTextField: UIViewRepresentable {
+struct PercentageTextField: UIViewRepresentable {
     
     @Binding var text: String
-    
     let placeholder: String
     let keyboardType: UIKeyboardType
-
+    
     func makeUIView(context: Context) -> UITextField {
         let textField = UITextField()
         textField.delegate = context.coordinator
@@ -49,7 +47,9 @@ struct CurrencyTextField: UIViewRepresentable {
         
         @objc
         func didChange(_ textField: UITextField) {
-            textField.text = textField.text?.currencyValue
+            let justValue = textField.text?.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "%", with: "") ?? ""
+            let percentageSymbol = justValue.isEmpty ? "" : "% "
+            textField.text = "\(percentageSymbol)\(justValue)"
             text = textField.text ?? ""
         }
     }

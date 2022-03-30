@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF43B89C27F40F01002E8743 /* PercentageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF43B89B27F40F01002E8743 /* PercentageTextField.swift */; };
 		CFAD5B0127F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B0027F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift */; };
 		CFAD5B0327F3C3B5007AA29F /* InputValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD5B0227F3C3B5007AA29F /* InputValuesView.swift */; };
 		CFAD5B0527F3C3B8007AA29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAD5B0427F3C3B8007AA29F /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF43B89B27F40F01002E8743 /* PercentageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageTextField.swift; sourceTree = "<group>"; };
 		CFAD5AFD27F3C3B5007AA29F /* CalcFixedIncome-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalcFixedIncome-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD5B0027F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcFixedIncome_SwiftUIApp.swift; sourceTree = "<group>"; };
 		CFAD5B0227F3C3B5007AA29F /* InputValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValuesView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				CFAD5B1A27F3C931007AA29F /* MonthlyIncomes */,
 				CFAD5B0F27F3C782007AA29F /* InputValues */,
 				CFAD5B2427F3E3DD007AA29F /* CurrencyTextField.swift */,
+				CF43B89B27F40F01002E8743 /* PercentageTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				CFAD5B0327F3C3B5007AA29F /* InputValuesView.swift in Sources */,
 				CFAD5B2327F3CE16007AA29F /* DirectResultViewModel.swift in Sources */,
 				CFAD5B1927F3C89E007AA29F /* Date+Utils.swift in Sources */,
+				CF43B89C27F40F01002E8743 /* PercentageTextField.swift in Sources */,
 				CFAD5B0127F3C3B5007AA29F /* CalcFixedIncome_SwiftUIApp.swift in Sources */,
 				CFAD5B1C27F3C940007AA29F /* MonthlyIncomesView.swift in Sources */,
 				CFAD5B2527F3E3DD007AA29F /* CurrencyTextField.swift in Sources */,

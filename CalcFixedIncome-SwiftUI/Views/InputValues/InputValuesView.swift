@@ -67,9 +67,10 @@ struct InputValueTextFields: View {
             
             CurrencyTextField(text: $monthlyContribuition, placeholder: "monthly contribuition", keyboardType: .numberPad)
             
-            TextField("anual rate", text: $anualRate)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+            PercentageTextField(text: $anualRate, placeholder: "anual rate", keyboardType: .numberPad)
+//            TextField("anual rate", text: $anualRate)
+//                .textFieldStyle(.roundedBorder)
+//                .keyboardType(.numberPad)
         }
     }
 }

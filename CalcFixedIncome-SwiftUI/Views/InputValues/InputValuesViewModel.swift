@@ -28,7 +28,7 @@ class InputValuesViewModel: ObservableObject {
     func checkValues() {
         guard let initialValue = initialValue.withoutCurrencyValue,
               let monthlyContribuition = monthlyContribuition.withoutCurrencyValue,
-              let anualRate = Double(anualRate),
+              let anualRate = Double(anualRate.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "%", with: "")),
               initialValue > 0,
               monthlyContribuition > 0,
               anualRate > 0 else {
