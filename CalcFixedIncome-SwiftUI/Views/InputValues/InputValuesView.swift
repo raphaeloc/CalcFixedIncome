@@ -46,6 +46,7 @@ struct InputValuesView: View {
                     .environmentObject(DirectResultViewModel(monthlyIncomes: viewModel.monthlyIncomes))
             }
             .hidden()
+            .frame(width: 0, height: 0, alignment: .bottom)
         }
         .padding(.top, 16)
         .padding(.horizontal, 16)
@@ -68,9 +69,6 @@ struct InputValueTextFields: View {
             CurrencyTextField(text: $monthlyContribuition, placeholder: "monthly contribuition", keyboardType: .numberPad)
             
             PercentageTextField(text: $anualRate, placeholder: "anual rate", keyboardType: .numberPad)
-//            TextField("anual rate", text: $anualRate)
-//                .textFieldStyle(.roundedBorder)
-//                .keyboardType(.numberPad)
         }
     }
 }

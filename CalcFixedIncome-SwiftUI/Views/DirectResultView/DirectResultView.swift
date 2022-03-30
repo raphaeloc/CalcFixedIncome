@@ -16,7 +16,7 @@ struct DirectResultView: View {
             
             Text("initial income:")
             
-            HStack {
+            VStack {
                 Text(Formatter.date.string(from: viewModel.firstIncome.date))
                     .font(.system(size: 18, weight: .light))
                 
@@ -27,7 +27,7 @@ struct DirectResultView: View {
             
             Text("final income:")
             
-            HStack {
+            VStack {
                 Text(Formatter.date.string(from: viewModel.lastIncome.date))
                     .font(.system(size: 18, weight: .light))
                 
@@ -48,6 +48,7 @@ struct DirectResultView: View {
             .cornerRadius(16)
         }
         .padding(.horizontal, 16)
+        .padding(.bottom, 16)
         .navigationTitle("direct result")
     }
 }
